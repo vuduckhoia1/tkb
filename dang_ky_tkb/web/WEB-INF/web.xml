@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	 version="3.1">  
+
+    <servlet>
+      <servlet-name>DangNhap_servlet</servlet-name>
+      <servlet-class>controller.DangNhap_servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+      <servlet-name>DangNhap_servlet</servlet-name>
+      <url-pattern>/DangNhap_servlet</url-pattern>
+    </servlet-mapping>    
+    
+    <servlet>
+      <servlet-name>LuaChon_servlet</servlet-name>
+      <servlet-class>controller.LuaChon_servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+      <servlet-name>LuaChon_servlet</servlet-name>
+      <url-pattern>/LuaChon_servlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+      <servlet-name>ChinhSuaMK_servlet</servlet-name>
+      <servlet-class>controller.ChinhSuaMK_servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+      <servlet-name>ChinhSuaMK_servlet</servlet-name>
+      <url-pattern>/ChinhSuaMK_servlet</url-pattern>
+    </servlet-mapping>    
+
+    <servlet>
+      <servlet-name>DangKyTKB_servlet</servlet-name>
+      <servlet-class>controller.DangKyTKB_servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+      <servlet-name>DangKyTKB_servlet</servlet-name>
+      <url-pattern>/DangKyTKB_servlet</url-pattern>
+    </servlet-mapping>    
+
+    <servlet>
+      <servlet-name>XemTKB_servlet</servlet-name>
+      <servlet-class>controller.XemTKB_servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+      <servlet-name>XemTKB_servlet</servlet-name>
+      <url-pattern>/XemTKB_servlet</url-pattern>
+    </servlet-mapping>    
+    
+    <servlet>
+      <servlet-name>LuaChon_admin_servlet</servlet-name>
+      <servlet-class>controller.LuaChon_admin_servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+      <servlet-name>LuaChon_admin_servlet</servlet-name>
+      <url-pattern>/LuaChon_admin_servlet</url-pattern>
+    </servlet-mapping>   
+     
+    <servlet>
+      <servlet-name>QuanLySV_admin_servlet</servlet-name>
+      <servlet-class>controller.QuanLySV_admin_servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+      <servlet-name>QuanLySV_admin_servlet</servlet-name>
+      <url-pattern>/QuanLySV_admin_servlet</url-pattern>
+    </servlet-mapping>    
+
+    <servlet>
+      <servlet-name>QuanLyLHP_admin_servlet</servlet-name>
+      <servlet-class>controller.QuanLyLHP_admin_servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+      <servlet-name>QuanLyLHP_admin_servlet</servlet-name>
+      <url-pattern>/QuanLyLHP_admin_servlet</url-pattern>
+    </servlet-mapping>    
+
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
